@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/darkYellow"
+    android:gravity="center"
+    android:weightSum="100">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/backarrow_container"
+        android:visibility="visible"
+        android:layout_weight="10">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:id="@+id/toolbar_back_arrow"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/check_container"
+        android:visibility="gone"
+        android:layout_weight="10">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_check_black_24dp"
+            android:id="@+id/toolbar_check_button"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="85"
+        android:text="some note title"
+        android:textSize="23sp"
+        android:padding="2dp"
+        android:gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:visibility="visible"
+        android:id="@+id/toolbar_note_title"
+        />
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="85"
+        android:hint="some title..."
+        android:textSize="23sp"
+        android:padding="2dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_marginStart="15dp"
+        android:visibility="gone"
+        android:id="@+id/toolbar_notetitle_editText"
+        />
+
+
+
+</LinearLayout>
